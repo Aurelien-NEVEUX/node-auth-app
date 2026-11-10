@@ -25,13 +25,13 @@ test.beforeEach(async ({ page }) => {
 
 // Happy path
 test("registered user can log in", async ({ page }) => {
-  await submitForm(page, username, "secret123", "Log in");
+  await submitForm(page, username, "secr", "Log in");
 
   await expect(page).toHaveURL(/#\/welcome$/);
 
   await expect(
     page.getByRole("heading", {
-      name: `Welcome V2, ${username}!`
+      name: `W, ${username}!`
     })
   ).toBeVisible();
 });
