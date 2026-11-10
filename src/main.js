@@ -8,7 +8,7 @@ const app = document.querySelector("#app");
 
 const FORMS = {
   register: {
-    title: "Cte an account",
+    title: "Create an account",
     button: "Register",
     autocomplete: "new-password",
     alt: 'Already have an account? <a href="#/login">Log in</a>',

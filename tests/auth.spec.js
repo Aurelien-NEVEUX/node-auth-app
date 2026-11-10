@@ -31,7 +31,7 @@ test("registered user can log in", async ({ page }) => {
 
   await expect(
     page.getByRole("heading", {
-      name: `Welcome, ${username}!`
+      name: `Welcome V2, ${username}!`
     })
   ).toBeVisible();
 });
